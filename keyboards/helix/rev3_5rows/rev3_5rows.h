@@ -48,3 +48,23 @@ void set_mac_mode(bool macmode);
     { R35, R34, R33, R32, R31, R30, R36 }, \
     { R45, R44, R43, R42, R41, R40, R46 } \
  }
+
+#define LAYOUT_SW( \
+  L00R, L00C, L01R, L01C, L02R, L02C, L03R, L03C, L04R, L04C, L05R, L05C,                         R00R, R00C, R01R, R01C, R02R, R02C, R03R, R03C, R04R, R04C, R05R, R05C, \
+  L10R, L10C, L11R, L11C, L12R, L12C, L13R, L13C, L14R, L14C, L15R, L15C,                         R10R, R10C, R11R, R11C, R12R, R12C, R13R, R13C, R14R, R14C, R15R, R15C, \
+  L20R, L20C, L21R, L21C, L22R, L22C, L23R, L23C, L24R, L24C, L25R, L25C,                         R20R, R20C, R21R, R21C, R22R, R22C, R23R, R23C, R24R, R24C, R25R, R25C, \
+  L30R, L30C, L31R, L31C, L32R, L32C, L33R, L33C, L34R, L34C, L35R, L35C, L36R, L36C, R36R, R36C, R30R, R30C, R31R, R31C, R32R, R32C, R33R, R33C, R34R, R34C, R35R, R35C, \
+  L40R, L40C, L41R, L41C, L42R, L42C, L43R, L43C, L44R, L44C, L45R, L45C, L46R, L46C, R46R, R46C, R40R, R40C, R41R, R41C, R42R, R42C, R43R, R43C, R44R, R44C, R45R, R45C  \
+  ) \
+  { \
+    { { L00R, L00C }, { L01R, L01C }, { L02R, L02C }, { L03R, L03C }, { L04R, L04C }, { L05R, L05C }, {0, 0} }, \
+    { { L10R, L10C }, { L11R, L11C }, { L12R, L12C }, { L13R, L13C }, { L14R, L14C }, { L15R, L15C }, {0, 0} }, \
+    { { L20R, L20C }, { L21R, L21C }, { L22R, L22C }, { L23R, L23C }, { L24R, L24C }, { L25R, L25C }, {0, 0} }, \
+    { { L30R, L30C }, { L31R, L31C }, { L32R, L32C }, { L33R, L33C }, { L34R, L34C }, { L35R, L35C }, { L36R, L36C } }, \
+    { { L40R, L40C }, { L41R, L41C }, { L42R, L42C }, { L43R, L43C }, { L44R, L44C }, { L45R, L45C }, { L46R, L46C } }, \
+    { { R05R, R05C }, { R04R, R04C }, { R03R, R03C }, { R02R, R02C }, { R01R, R01C }, { R00R, R00C }, {0, 0} }, \
+    { { R15R, R15C }, { R14R, R14C }, { R13R, R13C }, { R12R, R12C }, { R11R, R11C }, { R10R, R10C }, {0, 0} }, \
+    { { R25R, R25C }, { R24R, R24C }, { R23R, R23C }, { R22R, R22C }, { R21R, R21C }, { R20R, R20C }, {0, 0} }, \
+    { { R35R, R35C }, { R34R, R34C }, { R33R, R33C }, { R32R, R32C }, { R31R, R31C }, { R30R, R30C }, { R36R, R36C } }, \
+    { { R45R, R45C }, { R44R, R44C }, { R43R, R43C }, { R42R, R42C }, { R41R, R41C }, { R40R, R40C }, { R46R, R46C } } \
+ }
